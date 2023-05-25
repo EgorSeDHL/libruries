@@ -1,0 +1,35 @@
+﻿<Window x:Class="Eight_prac_C_sharp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Eight_prac_C_sharp"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid Background="{DynamicResource Primary}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="4*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="1*"/>
+        </Grid.ColumnDefinitions>
+
+        <StackPanel Grid.ColumnSpan="3" >
+
+            <TextBlock TextWrapping="Wrap" FontSize="30" TextAlignment="Center" Text="Введите текст" Margin="10,0,10,0"/>
+            <TextBox Background="{DynamicResource Secondary}" x:Name="name_box" HorizontalAlignment="Stretch" Margin="10" TextWrapping="Wrap" Text="" VerticalAlignment="Stretch" />
+
+        </StackPanel>
+        <ListBox Background="{DynamicResource Secondary}" Name="list_box" Margin="10" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Grid.Column="3" d:ItemsSource="{d:SampleData ItemCount=5}"/>
+        <Button Background="{DynamicResource Secondary}" x:Name="theme_btn" Content="Тема" Margin="10,10,10,10" Grid.Row="1" Click="theme_btn_Click"/>
+        <Button Background="{DynamicResource Secondary}" x:Name="add_btn" Content="Добавить в лист" Margin="10,10,10,10" Grid.Row="1" Grid.Column="1" Click="add_btn_Click"/>
+        <Button Background="{DynamicResource Secondary}" x:Name="serialize_btn" Content="Сериализация" Margin="10,10,10,10" Grid.Row="1" Grid.Column="2" Click="serialize_btn_Click"/>
+        <Button Background="{DynamicResource Secondary}" x:Name="deserialize_btn" Content="Деcериализация" Margin="10,10,10,10" Grid.Row="1" Grid.Column="3" Click="deserialize_btn_Click"/>
+
+
+    </Grid>
+</Window>
