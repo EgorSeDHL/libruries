@@ -14,6 +14,18 @@ namespace Eight_prac_C_sharp
     public partial class App : Application
     {
         private static string theme;
+        private static string language;
+
+        public static string Language
+        {
+            get { return language; }
+            set { language = value;
+                var lang = new ResourceDictionary { Source = new Uri($"pack://application:,,,/LanguageLib;component/Themes/{value}.xaml", UriKind.RelativeOrAbsolute)};
+                Current.Resources.MergedDictionaries.RemoveAt(1);
+                Current.Resources.MergedDictionaries.Insert(1, lang);
+            }
+        }
+
 
         public static string Theme
         {

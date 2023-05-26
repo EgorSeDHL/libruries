@@ -26,6 +26,7 @@ namespace Eight_prac_C_sharp
 
         public static List<string> list = new List<string>();
         public int i = 1;
+        public int j = 1;
         public MainWindow()
         {
             InitializeComponent();
@@ -61,6 +62,21 @@ namespace Eight_prac_C_sharp
             {
 
                 App.Theme = "OrangeTheme";
+                i++;
+            }
+        }
+
+        private void language_btn_Click(object sender, RoutedEventArgs e)
+        {
+            if (i == 2)
+            {
+                App.Language = "EnglishLanguage";
+                i--;
+            }
+            else
+            {
+
+                App.Language = "RussianLanguage";
                 i++;
             }
         }

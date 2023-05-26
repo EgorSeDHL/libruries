@@ -10,6 +10,7 @@
         "dependencies": {
           "CustomLib": "1.0.0",
           "FuncLibr": "1.0.0",
+          "LanguageLib": "1.0.0",
           "Newtonsoft.Json": "13.0.3"
         },
         "runtime": {
@@ -36,6 +37,11 @@
         "runtime": {
           "FuncLibr.dll": {}
         }
+      },
+      "LanguageLib/1.0.0": {
+        "runtime": {
+          "LanguageLib.dll": {}
+        }
       }
     }
   },
@@ -58,6 +64,11 @@
       "sha512": ""
     },
     "FuncLibr/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "LanguageLib/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

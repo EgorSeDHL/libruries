@@ -40,6 +40,19 @@
         "runtime": {
           "bin/placeholder/FuncLibr.dll": {}
         }
+      },
+      "LanguageLib/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/LanguageLib.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/LanguageLib.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.WindowsDesktop.App.WPF"
+        ]
       }
     }
   },
@@ -83,12 +96,18 @@
       "type": "project",
       "path": "../FuncLibr/FuncLibr.csproj",
       "msbuildProject": "../FuncLibr/FuncLibr.csproj"
+    },
+    "LanguageLib/1.0.0": {
+      "type": "project",
+      "path": "../LanguageLib/LanguageLib.csproj",
+      "msbuildProject": "../LanguageLib/LanguageLib.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0-windows7.0": [
       "CustomLib >= 1.0.0",
       "FuncLibr >= 1.0.0",
+      "LanguageLib >= 1.0.0",
       "Newtonsoft.Json >= 13.0.3"
     ]
   },
@@ -124,6 +143,9 @@
             },
             "C:\\Users\\egork\\source\\repos\\FuncLibr\\FuncLibr.csproj": {
               "projectPath": "C:\\Users\\egork\\source\\repos\\FuncLibr\\FuncLibr.csproj"
+            },
+            "C:\\Users\\egork\\source\\repos\\LanguageLib\\LanguageLib.csproj": {
+              "projectPath": "C:\\Users\\egork\\source\\repos\\LanguageLib\\LanguageLib.csproj"
             }
           }
         }
