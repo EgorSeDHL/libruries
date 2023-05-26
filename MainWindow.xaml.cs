@@ -1,4 +1,6 @@
 ﻿using FuncLibr;
+using LanguageLib;
+using CustomLib;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -55,13 +57,14 @@ namespace Eight_prac_C_sharp
         {
             if (i == 2)
             {
-                App.Theme = "DarkTheme";
+                
+                CustomLibr.Theme = "DarkTheme";
                 i--;
             }
             else
             {
 
-                App.Theme = "OrangeTheme";
+                CustomLibr.Theme = "OrangeTheme";
                 i++;
             }
         }
@@ -70,13 +73,13 @@ namespace Eight_prac_C_sharp
         {
             if (i == 2)
             {
-                App.Language = "EnglishLanguage";
+                LangTheme.Language = "EnglishLanguage";
                 i--;
             }
             else
             {
 
-                App.Language = "RussianLanguage";
+                LangTheme.Language = "RussianLanguage";
                 i++;
             }
         }
